@@ -1,0 +1,39 @@
+1.what is file system?
+> we need to store the data,retrieve the data,arrange the data,rename the data.
+ it is a area which is provided by any environment to manage the data in the form 
+ size.
+ eg>file or directory.
+ 
+ 2.what is HDFS?
+ > HDFS is hadoop distributed file system ...which focus on storage part of data 
+   in efficient and reliable way.
+   HDFS stores the data in distributed manner in the form of bocks.
+   having the max size 128mb.
+   it support fault tolerance with the help of replication factor.
+   it is popular for write once and read many times.
+   
+ 3.what is the diffrence between data block and split?
+ >  Block                    Split
+     storage                  computing
+     HDFS                     MapReduce(YARN)
+     
+ 4.what is commodity hardware?
+ > a machine which can be behave like a server.
+ 
+ 5.what is namenode?
+ > STORES FILE METADATA(DATA ABOUT BLOCKS),REPLICATION OPERATION,
+   BLOCK TOKENS TO CLIENT GIVE INSTRUCTION TO DATA_NODE,MASTER TO ALL SLAVES,
+   IT IS IN SAFE MODE,PRC CALLS AND BLOCKREPORTS.
+   
+ 6.Exp Rack Awareness?
+ > Node: any commodity hardware which is used to store rhe data.
+   Rack: It is collection of 30 to 40 nodes which are connected via same network switch.
+   rack is basically used for availability of the data and maintain the performance of system.
+   
+ 7.Exp the Replication process?
+ > policy in cse of rack cluster
+  1.no more than one replica is placed on one node
+  2.no more than 2 replica is placed upone the same rack.
+  
+ 8.what happen a when a new block is created?
+ >First replica
